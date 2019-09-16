@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/springBoot.iml" filepath="$PROJECT_DIR$/.idea/springBoot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springBoot-mybatis/springBoot-mybatis.iml" filepath="$PROJECT_DIR$/springBoot-mybatis/springBoot-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springBoot-quartz/springBoot-quartz.iml" filepath="$PROJECT_DIR$/springBoot-quartz/springBoot-quartz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-rabbit-constemor/springboot-rabbit-constemor.iml" filepath="$PROJECT_DIR$/springboot-rabbit-constemor/springboot-rabbit-constemor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springbootrabbitMq/springbootrabbitMq.iml" filepath="$PROJECT_DIR$/springbootrabbitMq/springbootrabbitMq.iml" />
+    </modules>
+  </component>
+</project>
