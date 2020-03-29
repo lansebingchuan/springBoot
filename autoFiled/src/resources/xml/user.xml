@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schedule xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <group>
+        <job name="zht" description="状态" invokeTarget="dcdbScheduleJob.updateNextFeedbackLimitDate" cronExp="0 30 1 * * ?"/>
+        <job name="ls" description="李四" invokeTarget="dcdbScheduleJob.addOverdueRecord" cronExp="0 0/5 * * * ?"/>
+    </group>
+
+</schedule>

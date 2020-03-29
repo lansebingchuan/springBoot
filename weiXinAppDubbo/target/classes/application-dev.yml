@@ -1,0 +1,20 @@
+#server
+server:
+  port: 8090
+  servlet:
+    context-path: /
+  max-http-header-size: 8192
+dubbo:
+  registry:
+    address: zookeeper://127.0.0.1:2181
+  protocol:
+    port: -1
+    name: dubbo
+  provider:
+    retries: -1
+    timeout: 5000
+  consumer:
+    retries: -1
+    timeout: 5000
+  scan:
+    base-packages: com.zht.dubbo #dubbo 扫描包

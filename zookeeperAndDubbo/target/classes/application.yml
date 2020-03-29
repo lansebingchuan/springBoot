@@ -1,0 +1,33 @@
+#spring-boot
+spring:
+  application:
+    name: zookeeperAndDubbo
+  profiles:
+    active: dev
+  aop:
+    proxy-target-class: true
+    auto: true
+  freemarker:
+    cache: false
+    charset: utf-8
+    prefer-file-system-access: false
+    settings:
+      number_format: 0
+  http:
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  devtools:
+    restart:
+      enabled: true
+  servlet:
+    multipart:
+      max-request-size: 500MB
+      max-file-size: 50MB
+#logging
+logging:
+  config: classpath:logback-spring.xml
