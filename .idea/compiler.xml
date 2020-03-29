@@ -6,17 +6,36 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="springBoot-mybatis" />
-        <module name="springBoot-quartz" />
+        <module name="AutoFiled" />
+        <module name="springBoot-quartz-rabbitMq" />
+        <module name="springboot-rabbitMq" />
+        <module name="weiXinAppDubbo" />
         <module name="springboot-rabbit-constemor" />
-        <module name="springbootrabbitMq" />
+        <module name="springBoot-mybatis" />
+        <module name="springboot-dateBaseMybatisPlugs" />
+        <module name="zookeeperAndDubbo" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8">
+    <bytecodeTargetLevel>
+      <module name="AutoFiled" target="1.8" />
+      <module name="springboot-dateBaseMybatisPlugs" target="1.8" />
       <module name="springBoot-mybatis" target="1.8" />
-      <module name="springBoot-quartz" target="1.8" />
+      <module name="springBoot-quartz-rabbitMq" target="1.8" />
       <module name="springboot-rabbit-constemor" target="1.8" />
-      <module name="springbootrabbitMq" target="1.8" />
+      <module name="springboot-rabbitMq" target="1.8" />
+      <module name="weiXinAppDubbo" target="1.8" />
+      <module name="zookeeperAndDubbo" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springBoot-mybatis" options="-parameters" />
+      <module name="springBoot-quartz-rabbitMq" options="-parameters" />
+      <module name="springboot-dateBaseMybatisPlugs" options="-parameters" />
+      <module name="springboot-rabbit-constemor" options="-parameters" />
+      <module name="springboot-rabbitMq" options="-parameters" />
+      <module name="weiXinAppDubbo" options="-parameters" />
+      <module name="zookeeperAndDubbo" options="-parameters" />
+    </option>
   </component>
 </project>

@@ -1,0 +1,35 @@
+#server
+server:
+  port: 8080
+  servlet:
+    context-path: /
+  max-http-header-size: 8192
+spring:
+  datasource:
+    dynamic:
+      primary: master #设置默认的数据源或者数据源组,默认值即为master.
+      strict: true #设置严格模式,启动异常则报错
+      datasource:
+        master:
+          username: root
+          password: 123456
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&nullCatalogMeansCurrent=true
+          type: com.zaxxer.hikari.HikariDataSource
+        log:
+          username: root
+          password: 123456
+          driver-class-name: com.mysql.cj.jdbc.Driver
+          url: jdbc:mysql://127.0.0.1:3306/jkaoqing?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&nullCatalogMeansCurrent=true
+          type: com.zaxxer.hikari.HikariDataSource
+  redis:
+    database: 0
+    host: 127.0.0.1
+    password: 123456
+    port: 6379
+  klock:
+      address: 127.0.0.1:6379
+      database: 2
+      password: 123456
+      waitTime: 60 #获取锁最长阻塞时间（单位：秒）
+      lease-time: 60 #已获取锁后自动释放时间（单位：秒）

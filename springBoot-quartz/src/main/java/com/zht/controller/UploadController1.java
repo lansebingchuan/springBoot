@@ -40,7 +40,7 @@ public class UploadController1 {
             String originalFilename = file.getOriginalFilename();
             String houzhui = originalFilename.substring(originalFilename.lastIndexOf("."));
             if (!houzhui.equals(".jpg")){
-                return "上传文件失败，文件数量："+count;
+                return "上传文件失败，不支持的文件类型--"+houzhui;
             }
             System.out.println("后缀："+houzhui);
             File path = new File(ResourceUtils.getURL("classpath:").getPath());

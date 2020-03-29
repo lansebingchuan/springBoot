@@ -6,12 +6,16 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
+        <option value="$PROJECT_DIR$/springboot-dateBase/pom.xml" />
         <option value="$PROJECT_DIR$/springBoot-mybatis/pom.xml" />
         <option value="$PROJECT_DIR$/springBoot-quartz/pom.xml" />
-        <option value="$PROJECT_DIR$/springbootrabbitMq/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-rabbit-constemor/pom.xml" />
+        <option value="$PROJECT_DIR$/springbootrabbitMq/pom.xml" />
+        <option value="$PROJECT_DIR$/zookeeperAndDubbo/pom.xml" />
+        <option value="$PROJECT_DIR$/weiXinAppDubbo/pom.xml" />
+        <option value="$PROJECT_DIR$/autoFiled/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_9" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_13" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>
