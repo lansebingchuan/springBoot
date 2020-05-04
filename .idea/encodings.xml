@@ -2,10 +2,13 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/autoFiled/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/autoFiled/说明.txt" charset="GBK" />
     <file url="file://$PROJECT_DIR$/springBoot-mybatis/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springBoot-mybatis/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springBoot-quartz/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springBoot-quartz/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springBootShiro/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springBootShiro/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-dateBaseMybatisPlugs/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-rabbit-constemor/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-rabbit-constemor/src/main/resources" charset="UTF-8" />
