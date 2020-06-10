@@ -34,25 +34,18 @@
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
 
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.11</version>
+      <scope>test</scope>
+    </dependency>
+
     <!--热部署-->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-devtools</artifactId>
       <optional>true</optional>
-    </dependency>
-
-
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
     </dependency>
 
     <!--dubbo-->
@@ -81,6 +74,29 @@
       <artifactId>lombok</artifactId>
       <version>1.18.10</version>
       <scope>provided</scope>
+    </dependency>
+
+    <!--安全控制器 shiro-spring-->
+
+    <dependency>
+      <groupId>org.apache.shiro</groupId>
+      <artifactId>shiro-spring</artifactId>
+      <version>1.5.1</version>
+    </dependency>
+
+    <!--这种工具类-->
+    <dependency>
+      <groupId>cn.hutool</groupId>
+      <artifactId>hutool-all</artifactId>
+      <version>4.6.10</version>
+      <scope>compile</scope>
+    </dependency>
+
+    <!--jwt工具类-->
+    <dependency>
+      <groupId>com.auth0</groupId>
+      <artifactId>java-jwt</artifactId>
+      <version>3.10.1</version>
     </dependency>
 
   </dependencies>

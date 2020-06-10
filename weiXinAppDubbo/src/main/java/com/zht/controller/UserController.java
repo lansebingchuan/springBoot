@@ -1,5 +1,6 @@
 package com.zht.controller;
 
+import com.zht.context.CurrentUserHolder;
 import com.zht.dubbo.rpcService.UserRpcService;
 import com.zht.entity.User;
 import org.apache.dubbo.config.annotation.Reference;
@@ -10,10 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
  * @author ZHT
  */
 @RestController
+@RequestMapping("/index")
 public class UserController {
 
     @Reference
-    UserRpcService userRpcService;
+    private UserRpcService userRpcService;
 
     @RequestMapping("/getUser")
     public User getUser(){

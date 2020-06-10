@@ -1,0 +1,2 @@
+logFilter=com.zht.dubbo.filter.LogFilter
+contextFilter=com.zht.dubbo.filter.ConsumerContextFilter

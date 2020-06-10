@@ -1,4 +1,4 @@
-package com.zht.baseEntity;
+package com.zht.dto;
 
 import com.zht.exception.ErrorCode;
 import lombok.Builder;
@@ -7,12 +7,10 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * <p>
- * 通用返回结果
- * </p>
+ * 异步返回数据
+ * 异步返回数据
  *
- * @author zht
- * @since 2019-10-14
+ * @author ZHT
  */
 @Data
 @Builder

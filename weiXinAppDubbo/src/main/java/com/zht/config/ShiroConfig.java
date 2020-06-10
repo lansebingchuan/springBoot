@@ -1,12 +1,16 @@
 package com.zht.config;
 
 import cn.hutool.crypto.digest.BCrypt;
-import com.zht.shiroEntity.realm.AdminRealm;
-import com.zht.shiroEntity.realm.UserRealm;
+import com.zht.auth.filter.JwtFilter;
+import com.zht.auth.realm.JwtRealm;
+import com.zht.auth.realm.UsernamePasswordRealm;
 import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.authc.credential.AllowAllCredentialsMatcher;
 import org.apache.shiro.authc.credential.CredentialsMatcher;
 import org.apache.shiro.authc.pam.AtLeastOneSuccessfulStrategy;
 import org.apache.shiro.authc.pam.ModularRealmAuthenticator;
+import org.apache.shiro.mgt.DefaultSessionStorageEvaluator;
+import org.apache.shiro.mgt.DefaultSubjectDAO;
 import org.apache.shiro.realm.Realm;
 import org.apache.shiro.spring.LifecycleBeanPostProcessor;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
@@ -17,36 +21,16 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.DependsOn;
 
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import javax.servlet.Filter;
+import java.util.*;
 
 /**
- * <p>
- * 安全配置
- * </p>
+ * shiro配置类
  *
- * @author zht
- * @since 2020-04-1
+ * @author ZHT
  */
 @Configuration
 public class ShiroConfig {
-
-    /**
-     * 密码匹配器
-     */
-    @Bean
-    public CredentialsMatcher credentialsMatcher() {
-        return (authenticationToken, authenticationInfo) -> {
-            UsernamePasswordToken token = (UsernamePasswordToken) authenticationToken;
-            //明文，用户输入密码
-            String plaintext = new String(token.getPassword());
-            //密文,数据库里面的密码
-            String hashed = authenticationInfo.getCredentials().toString();
-            return BCrypt.checkpw(plaintext, hashed);
-        };
-    }
 
     /**
      * 安全过滤器
@@ -55,32 +39,24 @@ public class ShiroConfig {
     public ShiroFilterFactoryBean shiroFilterFactoryBean() {
         ShiroFilterFactoryBean shiroFilterFactoryBean = new ShiroFilterFactoryBean();
         shiroFilterFactoryBean.setSecurityManager(securityManager());
-        shiroFilterFactoryBean.setUnauthorizedUrl("/unauthorized.html");
-        shiroFilterFactoryBean.setLoginUrl("/login.html");
-        //配置拦截规则
+        // 添加认证过滤器
+        Map<String, Filter> filterMap = new HashMap<>();
+        filterMap.put("jwtFilter", jwtFilter());
+        shiroFilterFactoryBean.setFilters(filterMap);
+        // 配置拦截规则
         Map<String, String> filterChainDefinitionMap = new LinkedHashMap<>();
-        //不需要认证即可访问的url
-        filterChainDefinitionMap.put("/", "anon");
-        filterChainDefinitionMap.put("/login.html", "anon");
-        filterChainDefinitionMap.put("/alogin.html", "anon");
-        filterChainDefinitionMap.put("/unauthorized.html", "anon");
-        filterChainDefinitionMap.put("/login", "anon");
-        filterChainDefinitionMap.put("/alogin", "anon");
-        filterChainDefinitionMap.put("/logout", "anon");
-        filterChainDefinitionMap.put("/alogout", "anon");
-        //静态资源文件
-        filterChainDefinitionMap.put("/css/**", "anon");
-        filterChainDefinitionMap.put("/font-awesome/**", "anon");
-        filterChainDefinitionMap.put("/images/**", "anon");
-        filterChainDefinitionMap.put("/js/**", "anon");
-        filterChainDefinitionMap.put("/layuiadmin/**", "anon");
-        filterChainDefinitionMap.put("/pdf-viewer/**", "anon");
-        filterChainDefinitionMap.put("/vendors/**", "anon");
+        filterChainDefinitionMap.put("/index/**", "anon");
 
-        filterChainDefinitionMap.put("/**", "authc");
+        filterChainDefinitionMap.put("/api/**", "jwtFilter");
         shiroFilterFactoryBean.setFilterChainDefinitionMap(filterChainDefinitionMap);
 
         return shiroFilterFactoryBean;
+    }
+
+
+    @Bean
+    public JwtFilter jwtFilter() {
+        return new JwtFilter();
     }
 
     /**
@@ -89,10 +65,17 @@ public class ShiroConfig {
     @Bean
     public DefaultWebSecurityManager securityManager() {
         DefaultWebSecurityManager securityManager = new DefaultWebSecurityManager();
+        // 关闭Shiro自带的session
+        DefaultSubjectDAO subjectDAO = new DefaultSubjectDAO();
+        DefaultSessionStorageEvaluator defaultSessionStorageEvaluator = new DefaultSessionStorageEvaluator();
+        defaultSessionStorageEvaluator.setSessionStorageEnabled(false);
+        subjectDAO.setSessionStorageEvaluator(defaultSessionStorageEvaluator);
+        securityManager.setSubjectDAO(subjectDAO);
         //多种方式认证
         securityManager.setAuthenticator(modularRealmAuthenticator());
         return securityManager;
     }
+
 
     /**
      * 多方式认证
@@ -102,30 +85,46 @@ public class ShiroConfig {
         ModularRealmAuthenticator modularRealmAuthenticator = new ModularRealmAuthenticator();
         modularRealmAuthenticator.setAuthenticationStrategy(new AtLeastOneSuccessfulStrategy());
         List<Realm> realms = new ArrayList<>();
-        realms.add(adminRealm());
-        realms.add(userRealm());
+        realms.add(usernamePasswordRealm());
+        realms.add(jwtRealm());
         modularRealmAuthenticator.setRealms(realms);
         return modularRealmAuthenticator;
     }
 
     /**
-     * 超级管理员认证
+     * 账号密码认证
      */
     @Bean
-    public AdminRealm adminRealm() {
-        AdminRealm adminRealm = new AdminRealm();
-        adminRealm.setCredentialsMatcher(credentialsMatcher());
-        return adminRealm;
+    public UsernamePasswordRealm usernamePasswordRealm() {
+        UsernamePasswordRealm usernamePasswordRealm = new UsernamePasswordRealm();
+        usernamePasswordRealm.setCredentialsMatcher(credentialsMatcher());
+        return usernamePasswordRealm;
     }
 
     /**
-     * 普通用户认证
+     * 密码匹配器
      */
     @Bean
-    public UserRealm userRealm() {
-        UserRealm userRealm = new UserRealm();
-        userRealm.setCredentialsMatcher(credentialsMatcher());
-        return userRealm;
+    public CredentialsMatcher credentialsMatcher() {
+        return (authenticationToken, authenticationInfo) -> {
+            UsernamePasswordToken token = (UsernamePasswordToken) authenticationToken;
+            //明文
+            String plaintext = new String(token.getPassword());
+            //密文
+            String hashed = authenticationInfo.getCredentials().toString();
+            return BCrypt.checkpw(plaintext, hashed);
+        };
+    }
+
+
+    /**
+     * token认证
+     */
+    @Bean
+    public JwtRealm jwtRealm() {
+        JwtRealm jwtRealm = new JwtRealm();
+        jwtRealm.setCredentialsMatcher(new AllowAllCredentialsMatcher());
+        return jwtRealm;
     }
 
     /**
