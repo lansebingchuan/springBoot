@@ -1,0 +1,6 @@
+#server
+server:
+  port: 8090
+  servlet:
+    context-path: /
+  max-http-header-size: 8192

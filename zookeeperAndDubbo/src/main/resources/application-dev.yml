@@ -10,6 +10,13 @@ spring:
     host: 127.0.0.1
     password: 123456
     port: 6379
+  data:
+    mongodb:
+      database: test
+      host: 127.0.0.1
+      port: 27017
+      username: zht
+      password: '123456'
   klock:
     address: 127.0.0.1:6379
     database: 2

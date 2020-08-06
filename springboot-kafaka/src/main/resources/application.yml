@@ -1,0 +1,19 @@
+server:
+  port: 8089
+spring:
+  kafka:
+    producer:
+      #生产者服务地址
+      bootstrap-servers: 192.168.1.6:9092
+      # 发送的对象信息变为json格式
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    consumer:
+      #消费者服务地址
+      bootstrap-servers: 192.168.1.6:9092
+      # 配置消费者消息offset是否自动重置(消费者重连会能够接收最开始的消息)
+      auto-offset-reset: earliest
+    bootstrap-servers: 192.168.1.6:9092
+
+kafka:
+   topic:
+     test: test

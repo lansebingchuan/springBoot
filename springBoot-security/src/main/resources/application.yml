@@ -1,0 +1,41 @@
+#server
+server:
+  port: 8082
+  servlet:
+    context-path:
+#spring-boot
+spring:
+  application:
+    name: core
+  profiles:
+    active: dev
+  aop:
+    proxy-target-class: true
+    auto: true
+  freemarker:
+    cache: false
+    charset: utf-8
+    prefer-file-system-access: false
+    settings:
+      number_format: 0
+  http:
+    encoding:
+      charset: utf-8
+      enabled: true
+      force: true
+  mvc:
+    view:
+      prefix: /templates
+      suffix: .html
+  devtools:
+    restart:
+      enabled: true
+  session:
+    store-type: redis
+  servlet:
+    multipart:
+      max-request-size: 500MB
+      max-file-size: 50MB
+#logging
+logging:
+  config: classpath:logback-spring.xml

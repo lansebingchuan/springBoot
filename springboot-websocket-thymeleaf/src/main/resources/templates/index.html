@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>首页</title>
+    <link rel="stylesheet" th:href="@{/layuiadmin/layui/css/layui.css}">
+    <style>
+        table {
+            text-align: center;
+        }
+
+        body {
+            padding: 15px;
+        }
+
+        .warning-text {
+            text-indent: 2em;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<p>1、普通页面元素赋值</p>
+<div class="layui-bg-gray">
+    <span th:text="${zht}">姓名</span>
+</div>
+<br>
+<p>2、for循环迭代</p>
+<div class="layui-bg-gray">
+    <table border="1">
+        <thead>
+        <tr>
+            <th>编号</th>
+            <th>姓名</th>
+            <th>年龄</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="user,status:${userEntityList}">
+            <td th:text="${status.index}">--</td>
+            <td th:text="${user.name}">--</td>
+            <td th:text="${user.age}">--</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<br>
+<p>3、数据判断</p>
+<div class="layui-bg-gray">
+    <p class="warning-text">if 判断</p>
+    <p th:if="${#lists.isEmpty(userEntityList)}">(userEntityList) &nbsp;这个集合为空 </p>
+    <p th:if="${not #lists.isEmpty(userEntityList)}">(userEntityList)&nbsp; 这个集合不为空 </p>
+    <p th:if="${#lists.isEmpty(userEntityList1)}">(userEntityList-1) &nbsp;这个集合为空 </p>
+    <p class="warning-text">switch 判断</p>
+    <!--/* name 当前是小明 */-->
+    <div th:switch="${userEntityList[0].name}">
+        <p th:case="zht">张海涛</p>
+        <p th:case="小明">小明</p>
+    </div>
+
+
+</div>
+<br>
+<p>4、javascript文件的引入</p>
+<div class="layui-bg-gray" id="divfour">
+    <p>姓名： <span id="user_name"></span></p>
+</div>
+<p>5、页面包含</p>
+<p class="warning-text">
+    注意：
+    <span>“th:include” 只包含里面的代码  </span>
+    <span>“th:replace” 是把外层的div给代替了</span>
+</p>
+<div class="layui-bg-gray">
+    <div th:include="header::indexHeader"></div>
+    <div th:include="header::indexFooter"></div>
+    <div th:include="footer::footer(${userEntityList[0]})"></div>
+    <div th:replace="footer::footer(${userEntityList[0]})"></div>
+</div>
+<script type="text/javascript" th:src="@{/js/index.js}"></script>
+<script type="text/javascript" src="/layuiadmin/layui/layui.js" th:src="@{/layuiadmin/layui/layui.js}"></script>
+<script th:inline="javascript">
+
+    layui.use(['jquery'],function () {
+        var $ = layui.$;
+        //这样才能取出model中的值
+        var userEntityList = [[${userEntityList}]];
+
+        console.log(userEntityList[0].name + "/" + userEntityList[0].age);
+        
+        $('#divfour').find('#user_name').text(userEntityList[0].name);
+    })
+
+
+</script>
+</body>
+</html>
