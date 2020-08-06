@@ -1,0 +1,14 @@
+#server
+server:
+  port: 8089
+  servlet:
+    context-path: /
+  max-http-header-size: 8192
+spring:
+  data:
+    mongodb:
+      database: test
+      host: 127.0.0.1
+      port: 27017
+      username: zht
+      password: '123456'

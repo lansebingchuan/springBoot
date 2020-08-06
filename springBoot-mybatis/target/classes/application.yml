@@ -1,0 +1,12 @@
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml #配置mybatis的xml扫描位置
+  type-aliases-package: com.zht.bean #实体类
+
+#showSql
+logging:
+  level:
+    com:  #为包名的开始，那个包下面的以dbug打印
+      zht:
+        dao : debug
+server:
+  port: 8080 #服务端口

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="/layuiadmin/layui/css/layui.css">
+    <link rel="stylesheet" href="/vendors/jquery-ui/themes/flick/jquery-ui.min.css">
+    <link rel="stylesheet" href="/vendors/jquery-ui/themes/flick/jquery.ui.theme.css">
+    <link rel="stylesheet" href="/vendors/plupload/jquery.ui.plupload/css/jquery.ui.plupload.css">
+</head>
+<body>
+<div id="uploader">
+    <p>Your browser doesn't have Flash, Silverlighpt or HTML5 suport.</p>
+</div>
+<script src="/jquery/jquery.min.js"></script>
+<script src="/layuiadmin/layui/layui.all.js"></script>
+<script src="/vendors/jquery-ui/jquery-ui.min.js"></script>
+<script src="/vendors/plupload/plupload.full.min.js"></script>
+<script src="/vendors/plupload/jquery.ui.plupload/jquery.ui.plupload.min.js"></script>
+<script src="/vendors/plupload/i18n/zh_CN.js"></script>
+<script>
+    layui.use(['jquery', 'layer'], function () {
+        var $ = layui.$, layer = layui.layer, files = [];
+        var csrf_token = $("meta[name='_csrf']").attr("content");
+        var extensionArray=[];
+        //后端指定
+        var extensions= null;
+        if (extensions){
+            extensionArray=[{title:"指定格式",extensions:''+extensions.split(',')}]
+        } else {
+            extensionArray= [
+                {title: "图片", extensions: "jpg,gif,png,jpeg,bmp"},
+                {title: "压缩文件", extensions: "zip,rar"},
+                {title: "office文件", extensions: "doc,docx,xls,xlsx"},
+                {title: "pdf文件", extensions: "pdf"},
+                {title: "视频文件", extensions: "wmv,wma,mp4,avi,webm,swf"},
+                {title: "其他文件", extensions: "txt"}
+            ];
+        }
+        $("#uploader").plupload({
+            runtimes: 'html5,flash,silverlight,html4',
+            //处理上传后台url
+            url: "/upFile",
+            //上传请求添加csrf token
+            headers: {
+                "X-CSRF-TOKEN": csrf_token
+            },
+            //文件过滤
+            filters: {
+                //允许上传文件的类型
+                mime_types: extensionArray,
+                //允许上传最大size
+                max_file_size: '100mb',
+                //不允许选取重复文件
+                prevent_duplicates: true
+            },
+            //是否允许文件多选
+            multi_selection: true,
+            //文件选取后是否允许修改文件名称（点击文件名称修改）
+            rename: true,
+            //是否允许拖动排序
+            sortable: true,
+            dragdrop: true,
+            views: {
+                list: true,
+                thumbs: true,
+                active: 'thumbs'
+            },
+            flash_swf_url: '/vendors/plupload/js/Moxie.swf',
+            silverlight_xap_url: '/vendors/plupload/js/Moxie.xap',
+            init: {
+                QueueChanged: function (up) {
+                    //自动上传
+                    up.start();
+                },
+                FileUploaded: function (up, file, info) {
+                    if (info.status === 200) {
+                        var response = $.parseJSON(info.response);
+                        if (response.code === 0) {
+                            files.push(response);
+                        } else {
+                            //上传失败后从队列中删除对应的文件
+                            up.removeFile(file);
+                            layer.msg(response.errorMsg);
+                        }
+                    }
+                }
+            }
+        });
+
+        //获得已上传的附件信息
+        window.getUploadedFiles = function () {
+            return files;
+        }
+    });
+</script>
+</body>
+</html>

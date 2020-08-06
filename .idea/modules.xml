@@ -4,12 +4,16 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/autoFiled/AutoFiled.iml" filepath="$PROJECT_DIR$/autoFiled/AutoFiled.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/springBoot.iml" filepath="$PROJECT_DIR$/.idea/springBoot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springBoot-mongodb/springBoot-mongodb.iml" filepath="$PROJECT_DIR$/springBoot-mongodb/springBoot-mongodb.iml" />
       <module fileurl="file://$PROJECT_DIR$/springBoot-mybatis/springBoot-mybatis.iml" filepath="$PROJECT_DIR$/springBoot-mybatis/springBoot-mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/springBoot-quartz/springBoot-quartz-rabbitMq.iml" filepath="$PROJECT_DIR$/springBoot-quartz/springBoot-quartz-rabbitMq.iml" />
       <module fileurl="file://$PROJECT_DIR$/springBootShiro/springBootShiro.iml" filepath="$PROJECT_DIR$/springBootShiro/springBootShiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springBoot_fastdfs/springBoot_fastdfs.iml" filepath="$PROJECT_DIR$/springBoot_fastdfs/springBoot_fastdfs.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-dateBaseMybatisPlugs/springboot-dateBaseMybatisPlugs.iml" filepath="$PROJECT_DIR$/springboot-dateBaseMybatisPlugs/springboot-dateBaseMybatisPlugs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-kafaka/springboot-kafaka.iml" filepath="$PROJECT_DIR$/springboot-kafaka/springboot-kafaka.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-rabbit-constemor/springboot-rabbit-constemor.iml" filepath="$PROJECT_DIR$/springboot-rabbit-constemor/springboot-rabbit-constemor.iml" />
       <module fileurl="file://$PROJECT_DIR$/springbootrabbitMq/springboot-rabbitMq.iml" filepath="$PROJECT_DIR$/springbootrabbitMq/springboot-rabbitMq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-websocket-thymeleaf/springboot-websocket-thymeleaf.iml" filepath="$PROJECT_DIR$/springboot-websocket-thymeleaf/springboot-websocket-thymeleaf.iml" />
       <module fileurl="file://$PROJECT_DIR$/weiXinAppDubbo/weiXinAppDubbo.iml" filepath="$PROJECT_DIR$/weiXinAppDubbo/weiXinAppDubbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/zookeeperAndDubbo/zookeeperAndDubbo.iml" filepath="$PROJECT_DIR$/zookeeperAndDubbo/zookeeperAndDubbo.iml" />
     </modules>

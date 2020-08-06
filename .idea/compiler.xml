@@ -8,23 +8,31 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="AutoFiled" />
-        <module name="springBoot-quartz-rabbitMq" />
-        <module name="springBootShiro" />
-        <module name="springboot-rabbitMq" />
-        <module name="weiXinAppDubbo" />
-        <module name="springboot-rabbit-constemor" />
         <module name="springBoot-mybatis" />
+        <module name="springBootShiro" />
+        <module name="springBoot-quartz-rabbitMq" />
+        <module name="springBoot_fastdfs" />
+        <module name="weiXinAppDubbo" />
+        <module name="springboot-websocket-thymeleaf" />
+        <module name="springboot-kafaka" />
+        <module name="springboot-rabbit-constemor" />
         <module name="springboot-dateBaseMybatisPlugs" />
+        <module name="springBoot-mongodb" />
+        <module name="springboot-rabbitMq" />
         <module name="zookeeperAndDubbo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="AutoFiled" target="1.8" />
       <module name="springboot-dateBaseMybatisPlugs" target="1.8" />
+      <module name="springboot-kafaka" target="1.5" />
+      <module name="springBoot-mongodb" target="1.8" />
       <module name="springBoot-mybatis" target="1.8" />
       <module name="springBoot-quartz-rabbitMq" target="1.8" />
       <module name="springboot-rabbit-constemor" target="1.8" />
       <module name="springboot-rabbitMq" target="1.8" />
+      <module name="springboot-websocket-thymeleaf" target="1.8" />
+      <module name="springBoot_fastdfs" target="1.8" />
       <module name="springBootShiro" target="1.8" />
       <module name="weiXinAppDubbo" target="1.8" />
       <module name="zookeeperAndDubbo" target="1.8" />
@@ -35,10 +43,11 @@
       <module name="springBoot-mybatis" options="-parameters" />
       <module name="springBoot-quartz-rabbitMq" options="-parameters" />
       <module name="springboot-dateBaseMybatisPlugs" options="-parameters" />
+      <module name="springboot-kafaka" options="" />
       <module name="springboot-rabbit-constemor" options="-parameters" />
       <module name="springboot-rabbitMq" options="-parameters" />
       <module name="weiXinAppDubbo" options="-parameters" />
-      <module name="zookeeperAndDubbo" options="-parameters" />
+      <module name="zookeeperAndDubbo" options="" />
     </option>
   </component>
 </project>

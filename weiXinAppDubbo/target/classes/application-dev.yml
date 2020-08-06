@@ -12,9 +12,9 @@ dubbo:
     name: dubbo
   provider:
     retries: -1
-    timeout: 5000
+    timeout: 50000
   consumer:
     retries: -1
-    timeout: 5000
+    timeout: 50000
   scan:
     base-packages: com.zht.dubbo #dubbo 扫描包

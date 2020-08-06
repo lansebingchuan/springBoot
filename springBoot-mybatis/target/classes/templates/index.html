@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Title</title>
+    <script src="/js/jquery/jquery-2.1.1.min.js"></script>
+    <script src="/js/jquery/jquery.qrcode.min.js"></script>
+    <script src="/js/webServer/sockjs.min.js"></script>
+    <script src="/js/webServer/stomp.min.js"></script>
+    <script src="/js/index.js"></script>
+</head>
+<body>
+<h2>首页</h2>
+<div style="float: right">
+    <div id="qrcode">
+
+    </div>
+    <script>
+        $('#qrcode').qrcode({render:'canvas',text:"http://www.baidu.com",width:260,height:260});
+    </script>
+</div>
+<img src="/images/1.jpg"/>
+<form action="/feign/upload" enctype="multipart/form-data" method="post">
+    <span>小文件上传</span>
+    <input type="file" name="file"/><br>
+    <input type="submit" value="上传文">
+</form>
+<form action="/zuul/feign/upload" enctype="multipart/form-data" method="post">
+    <span>大文件上传，增加了  /zuul 前缀</span>
+    <input type="file" name="file"/><br>
+    <input type="submit" value="上传文">
+</form>
+<hr>
+<div>
+    <div>
+        <form>
+            <input type="button" value="连接webServer" id="connect">
+            <input type="button" value="取消连接webServer" id="disconnect">
+            <input type="text" value="我是张海涛" id="name">
+            <input type="button" value="发送信息" id="send">
+            <span>接收消息：</span><span id="greetings"/>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

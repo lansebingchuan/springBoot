@@ -1,0 +1,167 @@
+2020-06-13 15:56:24.872 [main] INFO  com.zht.AppTest - Starting AppTest on LAPTOP-K63OG1G9 with PID 4012 (started by ZHT in D:\studyspace\ideaSpace\springBoot\springBoot-mongodb)
+2020-06-13 15:56:24.874 [main] INFO  com.zht.AppTest - The following profiles are active: dev
+2020-06-13 15:56:26.088 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-06-13 15:56:26.124 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 27ms. Found 0 MongoDB repository interfaces.
+2020-06-13 15:56:27.358 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-13 15:56:28.816 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-06-13 15:56:28.817 [main] INFO  org.mongodb.driver.cluster - Adding discovered server 127.0.0.1:27017 to client view of cluster
+2020-06-13 15:56:28.970 [cluster-ClusterId{value='5ee486ac90fbf4370276dc51', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:9}] to 127.0.0.1:27017
+2020-06-13 15:56:28.980 [cluster-ClusterId{value='5ee486ac90fbf4370276dc51', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 7]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=7675900}
+2020-06-13 15:56:28.983 [cluster-ClusterId{value='5ee486ac90fbf4370276dc51', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+2020-06-13 15:56:29.615 [main] INFO  com.zht.AppTest - Started AppTest in 5.652 seconds (JVM running for 6.955)
+2020-06-13 15:56:29.969 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-13 15:57:51.570 [main] INFO  com.zht.AppTest - Starting AppTest on LAPTOP-K63OG1G9 with PID 10428 (started by ZHT in D:\studyspace\ideaSpace\springBoot\springBoot-mongodb)
+2020-06-13 15:57:51.571 [main] INFO  com.zht.AppTest - The following profiles are active: dev
+2020-06-13 15:57:52.263 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-06-13 15:57:52.285 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 14ms. Found 0 MongoDB repository interfaces.
+2020-06-13 15:57:53.409 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-13 15:57:55.059 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-06-13 15:57:55.060 [main] INFO  org.mongodb.driver.cluster - Adding discovered server 127.0.0.1:27017 to client view of cluster
+2020-06-13 15:57:55.129 [cluster-ClusterId{value='5ee487037ab1ca7b9207983c', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:10}] to 127.0.0.1:27017
+2020-06-13 15:57:55.137 [cluster-ClusterId{value='5ee487037ab1ca7b9207983c', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 7]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=5719300}
+2020-06-13 15:57:55.138 [cluster-ClusterId{value='5ee487037ab1ca7b9207983c', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+2020-06-13 15:57:55.658 [main] INFO  com.zht.AppTest - Started AppTest in 4.964 seconds (JVM running for 6.477)
+2020-06-13 15:57:55.875 [main] INFO  com.zht.AppTest - 成功
+2020-06-13 15:57:55.886 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-13 15:58:46.516 [main] INFO  com.zht.AppTest - Starting AppTest on LAPTOP-K63OG1G9 with PID 15852 (started by ZHT in D:\studyspace\ideaSpace\springBoot\springBoot-mongodb)
+2020-06-13 15:58:46.518 [main] INFO  com.zht.AppTest - The following profiles are active: dev
+2020-06-13 15:58:47.375 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-06-13 15:58:47.395 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 15ms. Found 0 MongoDB repository interfaces.
+2020-06-13 15:58:48.304 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-13 15:58:49.501 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-06-13 15:58:49.501 [main] INFO  org.mongodb.driver.cluster - Adding discovered server 127.0.0.1:27017 to client view of cluster
+2020-06-13 15:58:49.568 [cluster-ClusterId{value='5ee4873999e3916deedc50f3', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:11}] to 127.0.0.1:27017
+2020-06-13 15:58:49.576 [cluster-ClusterId{value='5ee4873999e3916deedc50f3', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 7]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=6181000}
+2020-06-13 15:58:49.578 [cluster-ClusterId{value='5ee4873999e3916deedc50f3', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+2020-06-13 15:58:50.050 [main] INFO  com.zht.AppTest - Started AppTest in 4.544 seconds (JVM running for 5.988)
+2020-06-13 15:58:50.448 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-13 16:17:51.669 [main] INFO  com.zht.AppTest - Starting AppTest on LAPTOP-K63OG1G9 with PID 12948 (started by ZHT in D:\studyspace\ideaSpace\springBoot\springBoot-mongodb)
+2020-06-13 16:17:51.671 [main] INFO  com.zht.AppTest - The following profiles are active: dev
+2020-06-13 16:17:52.829 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-06-13 16:17:52.858 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20ms. Found 0 MongoDB repository interfaces.
+2020-06-13 16:17:54.231 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-06-13 16:17:54.231 [main] INFO  org.mongodb.driver.cluster - Adding discovered server 127.0.0.1:27017 to client view of cluster
+2020-06-13 16:17:54.390 [cluster-ClusterId{value='5ee48bb2db502f1ff1e5109b', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:12}] to 127.0.0.1:27017
+2020-06-13 16:17:54.395 [cluster-ClusterId{value='5ee48bb2db502f1ff1e5109b', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 7]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3816800}
+2020-06-13 16:17:54.397 [cluster-ClusterId{value='5ee48bb2db502f1ff1e5109b', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+2020-06-13 16:17:55.171 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-13 16:17:55.944 [main] INFO  com.zht.AppTest - Started AppTest in 5.005 seconds (JVM running for 6.357)
+2020-06-13 16:18:14.214 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-13 16:35:25.075 [main] INFO  com.zht.AppTest - Starting AppTest on LAPTOP-K63OG1G9 with PID 1740 (started by ZHT in D:\studyspace\ideaSpace\springBoot\springBoot-mongodb)
+2020-06-13 16:35:25.076 [main] INFO  com.zht.AppTest - The following profiles are active: dev
+2020-06-13 16:35:26.494 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-06-13 16:35:26.519 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19ms. Found 0 MongoDB repository interfaces.
+2020-06-13 16:35:27.873 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-06-13 16:35:27.874 [main] INFO  org.mongodb.driver.cluster - Adding discovered server 127.0.0.1:27017 to client view of cluster
+2020-06-13 16:35:28.033 [cluster-ClusterId{value='5ee48fcf968c997b2166d14e', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:13}] to 127.0.0.1:27017
+2020-06-13 16:35:28.039 [cluster-ClusterId{value='5ee48fcf968c997b2166d14e', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 7]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3215400}
+2020-06-13 16:35:28.040 [cluster-ClusterId{value='5ee48fcf968c997b2166d14e', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+2020-06-13 16:35:28.925 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-13 16:35:29.584 [main] INFO  com.zht.AppTest - Started AppTest in 5.276 seconds (JVM running for 6.69)
+2020-06-13 16:35:39.434 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:14}] to 127.0.0.1:27017
+2020-06-13 16:35:39.530 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-13 16:35:39.533 [SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:14}] to 127.0.0.1:27017 because the pool has been closed.
+2020-06-13 16:36:10.433 [main] INFO  com.zht.AppTest - Starting AppTest on LAPTOP-K63OG1G9 with PID 2920 (started by ZHT in D:\studyspace\ideaSpace\springBoot\springBoot-mongodb)
+2020-06-13 16:36:10.434 [main] INFO  com.zht.AppTest - The following profiles are active: dev
+2020-06-13 16:36:11.753 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-06-13 16:36:11.796 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30ms. Found 0 MongoDB repository interfaces.
+2020-06-13 16:36:13.411 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-06-13 16:36:13.412 [main] INFO  org.mongodb.driver.cluster - Adding discovered server 127.0.0.1:27017 to client view of cluster
+2020-06-13 16:36:13.543 [cluster-ClusterId{value='5ee48ffd839f7657ea4d9e73', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:20}] to 127.0.0.1:27017
+2020-06-13 16:36:13.550 [cluster-ClusterId{value='5ee48ffd839f7657ea4d9e73', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 7]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4568800}
+2020-06-13 16:36:13.551 [cluster-ClusterId{value='5ee48ffd839f7657ea4d9e73', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+2020-06-13 16:36:14.401 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-13 16:36:15.233 [main] INFO  com.zht.AppTest - Started AppTest in 5.702 seconds (JVM running for 7.367)
+2020-06-13 16:36:35.100 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:21}] to 127.0.0.1:27017
+2020-06-13 16:36:35.175 [main] INFO  com.zht.AppTest - User(id=2, name=张海涛, age=21)
+2020-06-13 16:36:35.190 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-13 16:36:35.194 [SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:21}] to 127.0.0.1:27017 because the pool has been closed.
+2020-06-13 16:44:00.484 [main] INFO  com.zht.AppTest - Starting AppTest on LAPTOP-K63OG1G9 with PID 16340 (started by ZHT in D:\studyspace\ideaSpace\springBoot\springBoot-mongodb)
+2020-06-13 16:44:00.488 [main] INFO  com.zht.AppTest - The following profiles are active: dev
+2020-06-13 16:44:02.067 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-06-13 16:44:02.108 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30ms. Found 0 MongoDB repository interfaces.
+2020-06-13 16:44:03.690 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-06-13 16:44:03.690 [main] INFO  org.mongodb.driver.cluster - Adding discovered server 127.0.0.1:27017 to client view of cluster
+2020-06-13 16:44:03.837 [cluster-ClusterId{value='5ee491d365ba131bad5350b6', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:22}] to 127.0.0.1:27017
+2020-06-13 16:44:03.844 [cluster-ClusterId{value='5ee491d365ba131bad5350b6', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 7]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4496100}
+2020-06-13 16:44:03.845 [cluster-ClusterId{value='5ee491d365ba131bad5350b6', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+2020-06-13 16:44:05.086 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-13 16:44:05.983 [main] INFO  com.zht.AppTest - Started AppTest in 6.568 seconds (JVM running for 8.001)
+2020-06-13 16:44:06.491 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:23}] to 127.0.0.1:27017
+2020-06-13 16:44:06.524 [main] INFO  com.zht.AppTest - User(id=1, name=张海涛, age=21)
+2020-06-13 16:44:06.536 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-13 16:44:06.539 [SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:23}] to 127.0.0.1:27017 because the pool has been closed.
+2020-06-13 16:49:49.303 [main] INFO  com.zht.AppTest - Starting AppTest on LAPTOP-K63OG1G9 with PID 6876 (started by ZHT in D:\studyspace\ideaSpace\springBoot\springBoot-mongodb)
+2020-06-13 16:49:49.305 [main] INFO  com.zht.AppTest - The following profiles are active: dev
+2020-06-13 16:49:50.653 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-06-13 16:49:50.677 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17ms. Found 0 MongoDB repository interfaces.
+2020-06-13 16:49:52.115 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-06-13 16:49:52.116 [main] INFO  org.mongodb.driver.cluster - Adding discovered server 127.0.0.1:27017 to client view of cluster
+2020-06-13 16:49:52.228 [cluster-ClusterId{value='5ee49330bf1b4e40307b272c', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:24}] to 127.0.0.1:27017
+2020-06-13 16:49:52.233 [cluster-ClusterId{value='5ee49330bf1b4e40307b272c', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 7]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3379900}
+2020-06-13 16:49:52.234 [cluster-ClusterId{value='5ee49330bf1b4e40307b272c', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+2020-06-13 16:49:53.000 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-13 16:49:53.556 [main] INFO  com.zht.AppTest - Started AppTest in 5.206 seconds (JVM running for 6.45)
+2020-06-13 16:49:53.934 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:25}] to 127.0.0.1:27017
+2020-06-13 16:49:53.955 [main] INFO  com.zht.AppTest - User(id=1, name=张海涛, age=21)
+2020-06-13 16:49:53.965 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-13 16:49:53.968 [SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:25}] to 127.0.0.1:27017 because the pool has been closed.
+2020-06-13 16:50:57.478 [main] INFO  com.zht.AppTest - Starting AppTest on LAPTOP-K63OG1G9 with PID 14284 (started by ZHT in D:\studyspace\ideaSpace\springBoot\springBoot-mongodb)
+2020-06-13 16:50:57.480 [main] INFO  com.zht.AppTest - The following profiles are active: dev
+2020-06-13 16:50:58.237 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-06-13 16:50:58.266 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20ms. Found 0 MongoDB repository interfaces.
+2020-06-13 16:50:59.399 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-06-13 16:50:59.400 [main] INFO  org.mongodb.driver.cluster - Adding discovered server 127.0.0.1:27017 to client view of cluster
+2020-06-13 16:50:59.513 [cluster-ClusterId{value='5ee49373189f9465610170b2', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:26}] to 127.0.0.1:27017
+2020-06-13 16:50:59.519 [cluster-ClusterId{value='5ee49373189f9465610170b2', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 7]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3864800}
+2020-06-13 16:50:59.520 [cluster-ClusterId{value='5ee49373189f9465610170b2', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+2020-06-13 16:51:00.220 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-13 16:51:00.804 [main] INFO  com.zht.AppTest - Started AppTest in 4.261 seconds (JVM running for 5.483)
+2020-06-13 16:51:01.221 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:27}] to 127.0.0.1:27017
+2020-06-13 16:51:01.252 [main] INFO  com.zht.AppTest - User(id=2, name=张海涛, age=21)
+2020-06-13 16:51:01.267 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-13 16:51:01.270 [SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:27}] to 127.0.0.1:27017 because the pool has been closed.
+2020-06-13 16:51:19.329 [main] INFO  com.zht.AppTest - Starting AppTest on LAPTOP-K63OG1G9 with PID 5312 (started by ZHT in D:\studyspace\ideaSpace\springBoot\springBoot-mongodb)
+2020-06-13 16:51:19.331 [main] INFO  com.zht.AppTest - The following profiles are active: dev
+2020-06-13 16:51:20.133 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-06-13 16:51:20.156 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16ms. Found 0 MongoDB repository interfaces.
+2020-06-13 16:51:21.720 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-06-13 16:51:21.720 [main] INFO  org.mongodb.driver.cluster - Adding discovered server 127.0.0.1:27017 to client view of cluster
+2020-06-13 16:51:21.842 [cluster-ClusterId{value='5ee49389e3dfa6516cf00634', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:28}] to 127.0.0.1:27017
+2020-06-13 16:51:21.850 [cluster-ClusterId{value='5ee49389e3dfa6516cf00634', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 7]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=4997400}
+2020-06-13 16:51:21.852 [cluster-ClusterId{value='5ee49389e3dfa6516cf00634', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+2020-06-13 16:51:22.579 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-13 16:51:23.148 [main] INFO  com.zht.AppTest - Started AppTest in 4.656 seconds (JVM running for 5.931)
+2020-06-13 16:51:23.447 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:29}] to 127.0.0.1:27017
+2020-06-13 16:51:23.467 [main] INFO  com.zht.AppTest - User(id=1, name=张海涛, age=21)
+2020-06-13 16:51:23.475 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-13 16:51:23.476 [SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:29}] to 127.0.0.1:27017 because the pool has been closed.
+2020-06-13 16:57:27.042 [main] INFO  com.zht.AppTest - Starting AppTest on LAPTOP-K63OG1G9 with PID 15064 (started by ZHT in D:\studyspace\ideaSpace\springBoot\springBoot-mongodb)
+2020-06-13 16:57:27.043 [main] INFO  com.zht.AppTest - The following profiles are active: dev
+2020-06-13 16:57:27.851 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-06-13 16:57:27.879 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20ms. Found 0 MongoDB repository interfaces.
+2020-06-13 16:57:29.173 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-06-13 16:57:29.173 [main] INFO  org.mongodb.driver.cluster - Adding discovered server 127.0.0.1:27017 to client view of cluster
+2020-06-13 16:57:29.367 [cluster-ClusterId{value='5ee494f91b15284661929f95', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:30}] to 127.0.0.1:27017
+2020-06-13 16:57:29.372 [cluster-ClusterId{value='5ee494f91b15284661929f95', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 7]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=3538100}
+2020-06-13 16:57:29.373 [cluster-ClusterId{value='5ee494f91b15284661929f95', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+2020-06-13 16:57:30.042 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-13 16:57:30.626 [main] INFO  com.zht.AppTest - Started AppTest in 4.4 seconds (JVM running for 5.724)
+2020-06-13 16:57:30.988 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:31}] to 127.0.0.1:27017
+2020-06-13 16:57:31.044 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-13 16:57:31.048 [SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:31}] to 127.0.0.1:27017 because the pool has been closed.
+2020-06-13 17:02:34.727 [main] INFO  com.zht.AppTest - Starting AppTest on LAPTOP-K63OG1G9 with PID 2924 (started by ZHT in D:\studyspace\ideaSpace\springBoot\springBoot-mongodb)
+2020-06-13 17:02:34.729 [main] INFO  com.zht.AppTest - The following profiles are active: dev
+2020-06-13 17:02:35.817 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2020-06-13 17:02:35.844 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 19ms. Found 0 MongoDB repository interfaces.
+2020-06-13 17:02:37.083 [main] INFO  org.mongodb.driver.cluster - Cluster created with settings {hosts=[127.0.0.1:27017], mode=MULTIPLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2020-06-13 17:02:37.083 [main] INFO  org.mongodb.driver.cluster - Adding discovered server 127.0.0.1:27017 to client view of cluster
+2020-06-13 17:02:37.186 [cluster-ClusterId{value='5ee4962d1b3f1a79323abbdb', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:1, serverValue:37}] to 127.0.0.1:27017
+2020-06-13 17:02:37.190 [cluster-ClusterId{value='5ee4962d1b3f1a79323abbdb', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Monitor thread successfully connected to server with description ServerDescription{address=127.0.0.1:27017, type=STANDALONE, state=CONNECTED, ok=true, version=ServerVersion{versionList=[4, 2, 7]}, minWireVersion=0, maxWireVersion=8, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=2846700}
+2020-06-13 17:02:37.191 [cluster-ClusterId{value='5ee4962d1b3f1a79323abbdb', description='null'}-127.0.0.1:27017] INFO  org.mongodb.driver.cluster - Discovered cluster type of STANDALONE
+2020-06-13 17:02:37.905 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-06-13 17:02:38.458 [main] INFO  com.zht.AppTest - Started AppTest in 4.354 seconds (JVM running for 5.536)
+2020-06-13 17:02:38.789 [main] INFO  org.mongodb.driver.connection - Opened connection [connectionId{localValue:2, serverValue:38}] to 127.0.0.1:27017
+2020-06-13 17:02:38.822 [main] INFO  com.zht.AppTest - User(id=2, name=张三, age=21)
+2020-06-13 17:02:38.831 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-06-13 17:02:38.834 [SpringContextShutdownHook] INFO  org.mongodb.driver.connection - Closed connection [connectionId{localValue:2, serverValue:38}] to 127.0.0.1:27017 because the pool has been closed.

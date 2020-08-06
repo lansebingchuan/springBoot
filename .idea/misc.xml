@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/springboot-kafaka" />
+    <file type="web" url="file://$PROJECT_DIR$/springBoot-security" />
+  </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
@@ -15,8 +19,14 @@
         <option value="$PROJECT_DIR$/weiXinAppDubbo/pom.xml" />
         <option value="$PROJECT_DIR$/autoFiled/pom.xml" />
         <option value="$PROJECT_DIR$/springBootShiro/pom.xml" />
+        <option value="$PROJECT_DIR$/springBoot_fastdfs/pom.xml" />
+        <option value="$PROJECT_DIR$/springBoot-mongodb/pom.xml" />
+        <option value="$PROJECT_DIR$/springBoot0-security/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-kafaka/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-websocket/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-websocket-thymeleaf/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_13" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>

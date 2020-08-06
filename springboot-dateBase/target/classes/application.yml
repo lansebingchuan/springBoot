@@ -1,0 +1,32 @@
+spring:
+  profiles:
+    active: dev
+  session:
+    store-type: redis
+  freemarker:
+    cache: false
+    charset: utf-8
+    prefer-file-system-access: false
+    settings:
+      number_format: 0
+  mvc:
+    view:
+      prefix: /templates
+      suffix: .ftl
+  servlet:
+    multipart:
+      max-request-size: 500MB
+      max-file-size: 50MB
+#mybatis-plus
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      logic-delete-value: Y
+      logic-not-delete-value: N
+  mapper-locations: classpath*:com/zht/mapper/**/*Mapper.xml
+#logging 日志位置
+logging:
+  config: classpath:logback-spring.xml
