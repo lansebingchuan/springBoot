@@ -15,6 +15,9 @@ public class AuthWebConfig implements WebMvcConfigurer {
 
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/login.html").setViewName("index");
+        registry.addViewController("/").setViewName("index/index");
+        registry.addViewController("/login.html").setViewName("login/index");
+        registry.addViewController("/reg.html").setViewName("reg/index");
+        registry.addViewController("/index.html").setViewName("index/index");
     }
 }
