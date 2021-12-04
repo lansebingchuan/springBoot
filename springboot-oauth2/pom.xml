@@ -84,6 +84,11 @@
             <artifactId>spring-security-jwt</artifactId>
             <version>1.0.9.RELEASE</version>
         </dependency>
+        <dependency>
+            <groupId>org.opendaylight.controller</groupId>
+            <artifactId>swagger-ui</artifactId>
+            <version>0.1.4-Lithium-SR4</version>
+        </dependency>
     </dependencies>
 
     <build>

@@ -43,12 +43,18 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
      */
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests()
+        /**
+         * antMatcher("/**").authorizeRequests(): 所有请求都需要登录
+         * antMatchers("/login").permitAll()： 过滤掉的url
+         * anyRequest().authenticated()： 任何请求都需要登录
+         * and().formLogin()： 支持表单登录
+         * and().httpBasic()： 支持 httpBasic 登录
+         */
+        http.antMatcher("/**").authorizeRequests()
                 .antMatchers("/login").permitAll()
                 .anyRequest().authenticated()
-                .and()
-                .formLogin().and()
-                .httpBasic();
+                .and().formLogin()
+                .and().httpBasic();
     }
 
     /**

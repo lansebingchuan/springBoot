@@ -3,6 +3,7 @@ package com.zht.controller;
 import com.zht.business.entity.User;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -23,7 +24,7 @@ public class UserController {
      * @param authentication
      * @return
      */
-//    @PreAuthorize("hasAuthority('read')")
+    @PreAuthorize("hasAuthority('read')")
     @RequestMapping(value = "/user", method = RequestMethod.GET)
     public ResponseEntity<HashMap<String, Object>> getUser(UsernamePasswordAuthenticationToken authentication) {
         User user = (User) authentication.getPrincipal();
@@ -34,6 +35,16 @@ public class UserController {
             put("createAt", user.getCreateTime());
             put("auth", user.getAuthorities());
         }}, HttpStatus.OK);
+    }
+
+    /**
+     * 定义用户信息
+     *
+     * @return
+     */
+    @RequestMapping(value = "/getName", method = RequestMethod.GET)
+    public ResponseEntity<String> getName() {
+        return new ResponseEntity<>("张海涛", HttpStatus.OK);
     }
 
 
